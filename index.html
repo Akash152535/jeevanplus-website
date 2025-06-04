@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Jeevan+ | Easy Medicine Delivery</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0; padding: 0;
+    background: #f8fafd;
+    color: #333;
+    line-height: 1.6;
+  }
+  a {
+    color: #0077ff;
+    text-decoration: none;
+  }
+  header {
+    background: #0077ff;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+  }
+  main {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  section {
+    margin-bottom: 3rem;
+  }
+  h1, h2, h3 {
+    margin-bottom: 0.8rem;
+  }
+  p {
+    margin-bottom: 1.2rem;
+  }
+  .btn-primary {
+    background: #0077ff;
+    color: white;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  .btn-primary:hover {
+    background: #005bbb;
+  }
+  .features-list {
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  .features-list li {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    font-weight: 600;
+  }
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #e8ecf7;
+    color: #666;
+    font-size: 0.9rem;
+  }
+  input, textarea {
+    padding: 0.6rem;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+  }
+  @media(max-width: 600px) {
+    header {
+      font-size: 1.4rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>Jeevan+</header>
+
+<main>
+  <section id="hero">
+    <h1>Easy Medicine Delivery, Anywhere, Anytime</h1>
+    <p>Your trusted app for affordable medicines, real-time order tracking, and AI-powered health support.</p>
+    <button class="btn-primary" onclick="alert('Coming Soon on Play Store!')">Download App</button>
+  </section>
+
+  <section id="features">
+    <h2>Why Choose Jeevan+?</h2>
+    <ul class="features-list">
+      <li>Wide range of medicines & health products</li>
+      <li>AI Chatbot for personalized medicine advice</li>
+      <li>Instant discounts up to 20%</li>
+      <li>Fast & reliable home delivery</li>
+      <li>Easy prescription upload</li>
+      <li>Secure online payments</li>
+    </ul>
+  </section>
+
+  <section id="about">
+    <h2>About Jeevan+</h2>
+    <p>At Jeevan+, we believe healthcare should be accessible and affordable for everyone, no matter where you live. Our app connects you with trusted pharmacies and offers AI-powered assistance to help you find the right medicines with ease.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Get In Touch</h2>
+    <p>Questions or partnership inquiries? Reach out to us!</p>
+    <form onsubmit="event.preventDefault(); alert('Thank you for contacting Jeevan+! We will get back to you soon.')">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required rows="4"></textarea><br/>
+      <button class="btn-primary" type="submit">Send Message</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 Jeevan+ | All rights reserved
+</footer>
+
+</body>
+</html>
