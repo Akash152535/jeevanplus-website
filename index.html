@@ -1,138 +1,179 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Jeevan+ | Easy Medicine Delivery</title>
-<style>
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0; padding: 0;
-    background: #f8fafd;
-    color: #333;
-    line-height: 1.6;
-  }
-  a {
-    color: #0077ff;
-    text-decoration: none;
-  }
-  header {
-    background: #0077ff;
-    color: white;
-    padding: 1rem 2rem;
-    text-align: center;
-    font-size: 1.8rem;
-    font-weight: bold;
-    letter-spacing: 1.2px;
-  }
-  main {
-    max-width: 960px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-  }
-  section {
-    margin-bottom: 3rem;
-  }
-  h1, h2, h3 {
-    margin-bottom: 0.8rem;
-  }
-  p {
-    margin-bottom: 1.2rem;
-  }
-  .btn-primary {
-    background: #0077ff;
-    color: white;
-    padding: 0.8rem 2rem;
-    border: none;
-    border-radius: 30px;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  .btn-primary:hover {
-    background: #005bbb;
-  }
-  .features-list {
-    list-style: none;
-    padding-left: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-  }
-  .features-list li {
-    background: white;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 0 8px rgba(0,0,0,0.1);
-    font-weight: 600;
-  }
-  footer {
-    text-align: center;
-    padding: 1rem;
-    background: #e8ecf7;
-    color: #666;
-    font-size: 0.9rem;
-  }
-  input, textarea {
-    padding: 0.6rem;
-    width: 100%;
-    max-width: 400px;
-    margin-bottom: 0.8rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-family: inherit;
-    font-size: 1rem;
-  }
-  @media(max-width: 600px) {
-    header {
-      font-size: 1.4rem;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jeevan+ | Affordable Medicine Delivery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #f5f7fa;
     }
-  }
-</style>
+
+    header {
+      background-color: #0077ff;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    .search-bar {
+      display: flex;
+      justify-content: center;
+      margin: 1.5rem auto;
+      max-width: 600px;
+      padding: 0 1rem;
+    }
+
+    .search-bar input {
+      flex: 1;
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 25px 0 0 25px;
+      font-size: 1rem;
+    }
+
+    .search-bar button {
+      padding: 0.8rem 1.5rem;
+      border: none;
+      background-color: #0077ff;
+      color: white;
+      border-radius: 0 25px 25px 0;
+      cursor: pointer;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .hero h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .btn-shop {
+      padding: 0.8rem 2rem;
+      background-color: #0077ff;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-size: 1.1rem;
+      cursor: pointer;
+    }
+
+    .offers, .featured-products {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .offers h2, .featured-products h2 {
+      margin-bottom: 1rem;
+      color: #333;
+    }
+
+    .card-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .card {
+      background: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .card img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      margin-bottom: 0.5rem;
+    }
+
+    .card h3 {
+      font-size: 1.1rem;
+      margin: 0.5rem 0;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #0077ff;
+    }
+
+    .rating {
+      color: #f5b50a;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #e8ecf7;
+      color: #555;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
 
 <header>Jeevan+</header>
 
-<main>
-  <section id="hero">
-    <h1>Easy Medicine Delivery, Anywhere, Anytime</h1>
-    <p>Your trusted app for affordable medicines, real-time order tracking, and AI-powered health support.</p>
-    <button class="btn-primary" onclick="alert('Coming Soon on Play Store!')">Download App</button>
-  </section>
+<div class="search-bar">
+  <input type="text" placeholder="Search for medicines, health products..." />
+  <button onclick="window.location.href='shop.html'">Search</button>
+</div>
 
-  <section id="features">
-    <h2>Why Choose Jeevan+?</h2>
-    <ul class="features-list">
-      <li>Wide range of medicines & health products</li>
-      <li>AI Chatbot for personalized medicine advice</li>
-      <li>Instant discounts up to 20%</li>
-      <li>Fast & reliable home delivery</li>
-      <li>Easy prescription upload</li>
-      <li>Secure online payments</li>
-    </ul>
-  </section>
+<div class="hero">
+  <h1>Get Medicines Delivered Fast & Safe</h1>
+  <button class="btn-shop" onclick="window.location.href='shop.html'">Shop Now</button>
+</div>
 
-  <section id="about">
-    <h2>About Jeevan+</h2>
-    <p>At Jeevan+, we believe healthcare should be accessible and affordable for everyone, no matter where you live. Our app connects you with trusted pharmacies and offers AI-powered assistance to help you find the right medicines with ease.</p>
-  </section>
+<section class="offers">
+  <h2>Today's Offers</h2>
+  <div class="card-list">
+    <div class="card">
+      <img src="https://via.placeholder.com/100x100?text=20%25+Off" />
+      <h3>20% Off All Prescriptions</h3>
+      <p>Valid on minimum ₹500</p>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/100x100?text=Free+Delivery" />
+      <h3>Free Delivery</h3>
+      <p>On orders above ₹299</p>
+    </div>
+  </div>
+</section>
 
-  <section id="contact">
-    <h2>Get In Touch</h2>
-    <p>Questions or partnership inquiries? Reach out to us!</p>
-    <form onsubmit="event.preventDefault(); alert('Thank you for contacting Jeevan+! We will get back to you soon.')">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Your Message" required rows="4"></textarea><br/>
-      <button class="btn-primary" type="submit">Send Message</button>
-    </form>
-  </section>
-</main>
+<section class="featured-products">
+  <h2>Featured Products</h2>
+  <div class="card-list">
+    <div class="card">
+      <img src="https://via.placeholder.com/100x100?text=Paracetamol" />
+      <h3>Paracetamol 500mg</h3>
+      <p class="price">₹25 <span class="rating">⭐ 4.5</span></p>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/100x100?text=Vitamin+C" />
+      <h3>Vitamin C Tablets</h3>
+      <p class="price">₹199 <span class="rating">⭐ 5.0</span></p>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/100x100?text=Face+Mask" />
+      <h3>3-Layer Face Mask</h3>
+      <p class="price">₹99 <span class="rating">⭐ 4.2</span></p>
+    </div>
+  </div>
+</section>
 
 <footer>
-  &copy; 2025 Jeevan+ | All rights reserved
+  &copy; 2025 Jeevan+ | Trusted Medicine Partner
 </footer>
 
 </body>
